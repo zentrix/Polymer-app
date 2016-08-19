@@ -1,0 +1,39 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/neon-animation/animations/scale-up-animation.html">
+<link rel="import" href="../bower_components/neon-animation/animations/fade-out-animation.html">
+<dom-module id="my-new-view">
+
+	<!-- Defines the element's style and local DOM -->
+	<template>
+		<style>
+			:host {
+				display: block;
+				padding: 16px;
+			}
+		</style>
+		<h1>New view</h1>
+		<paper-input label="Valor 1" value="25"></paper-input>
+		<paper-input label="Valor 2" char-counter value="25"></paper-input>
+
+		<paper-dialog>
+		  	<h2>Header</h2>
+		  	<div>
+		    	Lorem ipsum...
+		  	</div>
+		</paper-dialog>
+
+	</template>
+
+
+  	<!-- Creates the element's prototype and registers it -->
+	<script>
+		Polymer({
+			is: 'my-new-view',
+			properties: {
+				route: Object
+			}
+		});
+	</script>
+
+</dom-module>
